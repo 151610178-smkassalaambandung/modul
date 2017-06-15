@@ -8,7 +8,7 @@ class akhirController extends Controller
 
 {
 
-	public function__construck()
+	public function __construct()
 	{
 		$this->middleware('auth');
 	}
