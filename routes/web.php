@@ -28,7 +28,6 @@ Auth::routes();
 
 Route::get('/pulang', 'akhirController@index');
 
-Route::group(['prefix'=>'admin','middleware'=>['auth']], function () {
+Route::group(['prefix'=>'admin','middleware'=>['auth','role:admin']], function () {
 	Route::resource('authors', 'AuthorsController');
-
 });

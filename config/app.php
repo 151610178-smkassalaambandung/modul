@@ -179,8 +179,8 @@ return [
         App\Providers\RouteServiceProvider::class,
         //add on
         Collective\Html\HtmlServiceProvider::class,
-        //add on
         Laratrust\LaratrustServiceProvider::class,
+        Yajra\Datatables\DatatablesServiceProvider::class,
 
     ],
 
